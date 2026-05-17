@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+
+# Dados baseados em projeções de mercado para 2025-2026
+# Fonte: Projeções Brasscom e IDC para investimentos em TIC
+labels = ['Computação em Nuvem', 'Inteligência Artificial', 'Cibersegurança', 'Software e Serviços', 'Infraestrutura/IoT']
+investimentos = [38, 25, 15, 12, 10]  # Porcentagens aproximadas
+cores = ['#4F81BD', '#C0504D', '#9BBB59', '#8064A2', '#4BACC6']
+
+# Criando o gráfico de pizza
+plt.figure(figsize=(10, 7))
+plt.pie(investimentos, labels=labels, autopct='%1.1f%%', startangle=140, colors=cores, explode=(0.05, 0.05, 0, 0, 0))
+
+plt.title('Prioridades de Investimento Digital nas Empresas (Projeção 2025)', fontsize=14, pad=20)
+plt.axis('equal')  # Garante que a pizza seja um círculo
+
+# Salvando para o seu README
+plt.savefig('pizza_investimentos_2025.png', dpi=300, bbox_inches='tight')
+plt.show()
+
+print("Gráfico de pizza salvo como 'pizza_investimentos_2025.png'!")
