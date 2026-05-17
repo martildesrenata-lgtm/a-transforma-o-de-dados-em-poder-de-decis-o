@@ -1,0 +1,1 @@
+# a-transforma-o-de-dados-em-poder-de-decis-o
